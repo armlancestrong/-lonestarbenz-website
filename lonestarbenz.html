@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lone Star Benz - Mobile Mercedes-Benz Diagnostics</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            color: white;
+            background-color: #000;
+            scroll-behavior: smooth;
+        }
+
+        .video-background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            overflow: hidden;
+        }
+
+        #bg-video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            opacity: 0.4;
+        }
+
+        .content {
+            text-align: center;
+            padding: 2em;
+            background-color: rgba(0, 0, 0, 0.6);
+        }
+
+        header {
+            margin-bottom: 3em;
+            border-bottom: 1px solid #555;
+            padding-bottom: 2em;
+        }
+
+        header h1 {
+            font-size: 3em;
+            margin-bottom: 0.2em;
+            letter-spacing: 2px;
+        }
+
+        .tagline {
+            font-size: 1.2em;
+            font-style: italic;
+            color: #ccc;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 1.5em;
+            font-size: 1.1em;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #ddd;
+        }
+
+        main section {
+            padding: 2.5em 1em;
+            max-width: 800px;
+            margin: 0 auto;
+            border-bottom: 1px solid #444;
+        }
+
+        main section:last-child {
+            border-bottom: none;
+        }
+
+        h2 {
+            font-size: 2.2em;
+            margin-bottom: 1em;
+        }
+
+        h3 {
+            font-size: 1.8em;
+            color: #eee;
+        }
+
+        h4 {
+            font-size: 1.3em;
+            margin-bottom: 0.5em;
+        }
+
+        .service-step, .service-option {
+            margin-bottom: 2em;
+            text-align: left;
+            background-color: rgba(20, 20, 20, 0.7);
+            padding: 1.5em;
+            border-radius: 8px;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        ul li {
+            margin-bottom: 0.8em;
+            font-size: 1.1em;
+        }
+
+        #why-us ul li {
+            padding-left: 1em;
+            text-indent: -1em;
+        }
+
+        #why-us ul li::before {
+            content: '✓ ';
+            color: #00aaff;
+        }
+
+        #contact .phone {
+            font-size: 1.8em;
+            font-weight: bold;
+            margin: 1em 0;
+        }
+
+        #contact a {
+            color: #00aaff;
+            text-decoration: none;
+        }
+
+        #contact a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="video-background">
+        <video autoplay muted loop id="bg-video">
+            <source src="your-background-video.mp4" type="video/mp4">
+        </video>
+    </div>
+
+    <div class="content">
+        <header>
+            <h1>Lone Star Benz</h1>
+            <p class="tagline">Your Panhandle Expert for Mobile Mercedes-Benz Diagnostics!</p>
+            <nav>
+                <a href="#services">Services & Pricing</a>
+                <a href="#why-us">Why Choose Us</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </header>
+
+        <main>
+            <section id="intro">
+                <h2>Skip the Dealership & Expensive Towing</h2>
+                <p>We bring dealership-level XENTRY diagnostics directly to your home or office in the Texas Panhandle. Get honest, accurate answers the first time, saving you time, hassle, and money.</p>
+            </section>
+
+            <section id="services">
+                <h2>Our Transparent Pricing</h2>
+                
+                <div class="service-step">
+                    <h3>Step 1: Your Mobile Service Call</h3>
+                    <p>This covers our travel to your location, saving you hundreds on towing.</p>
+                    <ul>
+                        <li><strong>Within 60-Mile Radius of Pampa (79065):</strong> $120</li>
+                        <li><strong>Beyond 60 Miles:</strong> $120 Base + $3.50 per additional mile (one-way)</li>
+                    </ul>
+                </div>
+
+                <div class="service-step">
+                    <h3>Step 2: Choose Your Diagnostic Service</h3>
+                    <p>(Prices are in addition to the Mobile Service Call fee)</p>
+                    <div class="service-option">
+                        <h4>A. Basic XENTRY Fault Code Scan - $120</h4>
+                        <p>Perfect for "Check Engine Light" inquiries, pre-purchase checks, or clearing codes. Provides a full system scan and basic interpretation of fault codes. Includes up to 45 minutes of on-site time.</p>
+                    </div>
+                    <div class="service-option">
+                        <h4>B. Comprehensive XENTRY Diagnostics - $250</h4>
+                        <p>Best for persistent issues, performance problems, and complex electronic faults. Includes everything in the Basic Scan plus in-depth analysis, live data monitoring, component testing, and specific repair recommendations. Includes up to 1.5 hours of on-site time.</p>
+                    </div>
+                     <div class="service-option">
+                        <h4>C. Extended Diagnostic Time - $140 per hour</h4>
+                        <p>For highly complex or intermittent issues requiring more than 1.5 hours of investigation. Billed in 30-minute increments.</p>
+                    </div>
+                </div>
+
+                <div class="service-step">
+                    <h3>Step 3: Advanced XENTRY Services</h3>
+                     <div class="service-option">
+                        <p><strong>Module Coding / Adaptations:</strong> From $150 (e.g., battery coding, feature activation)</p>
+                        <p><strong>Key Programming:</strong> From $300 (dependent on model)</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="why-us">
+                <h2>Why Choose Us?</h2>
+                <ul>
+                    <li><strong>Unmatched Convenience:</strong> We come to you, eliminating expensive, long-distance towing.</li>
+                    <li><strong>Guaranteed Accuracy & Honesty:</strong> We use genuine Mercedes-Benz XENTRY diagnostics to get the correct diagnosis the first time.</li>
+                    <li><strong>Significant Savings:</strong> Get premium, dealership-level service without the premium price tag.</li>
+                    <li><strong>Transparency:</strong> Clear, upfront pricing so you know exactly what to expect.</li>
+                </ul>
+            </section>
+
+            <section id="contact">
+                <h2>Ready for an Accurate, Honest Diagnosis?</h2>
+                <p>Avoid the tow bill, the guesswork, and the dealership run-around.</p>
+                <div class="contact-info">
+                    <p class="phone">Call Today: (806) 440-1430</p>
+                    <p>Email: <a href="mailto:marcdoane0116@gmail.com">marcdoane0116@gmail.com</a></p>
+                    <p>Website: lonestarbenz.com</p>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+</html>
